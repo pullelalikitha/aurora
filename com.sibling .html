@@ -1,0 +1,25 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Sibling Combinators</title>
+  <style>
+     h2 + p {
+      color: green;
+      font-weight: bold;
+    }
+h2 ~ p {
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body>
+ <h2>Heading</h2>
+  <p>This paragraph is immediately after the heading.</p>
+  <p>This paragraph is also a sibling, but not adjacent.</p>
+  <div>
+    <p>This paragraph is nested inside a div and NOT a sibling.</p>
+  </div>
+
+</body>
+</html>
