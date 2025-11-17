@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Article Upload Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        form {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: 45%;
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #dc3545;
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        input[type="reset"]:hover {
+            background-color: #b02a37;
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="post">
+    <h2>Article Upload Form</h2>
+    
+    <label for="author">Author Name:</label>
+    <input type="text" id="author" name="author" placeholder="Enter author name" required>
+
+    <label for="filepath">File Path:</label>
+    <input type="file" id="filepath" name="filepath" required>
+
+    <label for="type">Article Type:</label>
+    <select id="type" name="type" required>
+        <option value="">--Select Type--</option>
+        <option value="technical">Technical</option>
+        <option value="literary">Literary</option>
+        <option value="general">General</option>
+    </select>
+
+    <label for="subject">Subject Topic:</label>
+    <select id="subject" name="subject" required>
+        <option value="">--Select Topic--</option>
+        <option value="science">Science</option>
+        <option value="technology">Technology</option>
+        <option value="education">Education</option>
+        <option value="health">Health</option>
+        <option value="culture">Culture</option>
+    </select>
+
+    <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+</form>
+
+</body>
+</html>

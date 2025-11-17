@@ -1,0 +1,30 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Combinators Example</title>
+  <style>
+    
+    .box p {
+      color: blue;
+      font-weight: bold;
+    }
+
+    
+    .box > p {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <p>This is a direct child paragraph.</p>
+
+    <div class="inner">
+      <p>This is a nested paragraph inside a div.</p>
+    </div>
+  </div>
+
+</body>
+</html>
